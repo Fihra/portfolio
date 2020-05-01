@@ -36,6 +36,20 @@
     transform: rotate(360deg);
   }
 }
+
+/*Navigation*/
+.navigator {
+  list-style-type: none;
+}
+
+.navigator li {
+  font-size: 2em; 
+}
+
+.nav-item {
+  text-size: 12em;
+}
+
 /* 
 body {
   display: flex;
