@@ -39,16 +39,10 @@
 
 /*Navigation*/
 .navigator {
-  list-style-type: none;
+  align-items: center;
 }
 
-.navigator li {
-  font-size: 2em; 
-}
 
-.nav-item {
-  text-size: 12em;
-}
 
 /* 
 body {
