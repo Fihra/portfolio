@@ -43,10 +43,10 @@ class Web extends Component {
     ]
 
     showProjects = () => {
-        return this.projectData.map(project => {
+        return this.projectData.map((project, index) => {
             return (
                 <Fade in={true} timeout={{ enter: 1000, exit: 1000}} >
-                    <Box p={3}><WebCard project={project}/></Box>
+                    <Box p={3}><WebCard key={index} project={project}/></Box>
                 </Fade>
             )
         })

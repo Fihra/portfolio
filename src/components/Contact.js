@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 
+import { Button, Link } from '@material-ui/core';
+
 class Contact extends Component {
     render(){
         return(
             <div>
-                <h2>Contact </h2>
-                <p>Contact me at this form.</p>
+                <Link href="mailto:fabrofabian@gmail.com"><Button>Email Me!</Button></Link>
             </div>
         )
     }

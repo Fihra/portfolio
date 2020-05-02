@@ -2,11 +2,13 @@ import React, { Component } from 'react';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import TwitterIcon from '@material-ui/icons/Twitter';
+import EmailIcon from '@material-ui/icons/Email';
 import { Link, IconButton } from '@material-ui/core';
 
 const myGithub = "https://www.github.com/fihra";
 const myLinkedIn = "https://www.linkedin.com/in/fabian-fabro";
 const myTwitter = "https://www.twitter.com/firahfabe";
+const myEmail = "mailto:fabrofabian@gmail.com";
 
 class Header extends Component {
     render(){
@@ -28,7 +30,12 @@ class Header extends Component {
                     <Link href={myTwitter}>
                     <TwitterIcon ></TwitterIcon>
                     </Link>
-                </IconButton>          
+                </IconButton>         
+                <IconButton>
+                    <Link href={myEmail}>
+                    <EmailIcon ></EmailIcon>
+                    </Link>
+                </IconButton>   
             </div>
         )
     }

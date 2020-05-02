@@ -46,7 +46,7 @@ class ProjectCard extends Component {
         return(
             <Card className="project-card">
                 <CardHeader title={title}/>
-                <CardMedia className="project-image" image={thumbnail}/>
+                <CardMedia className="project-image" image={thumbnail} alt={thumbnail}/>
                 <CardContent>
                     <Typography>{info}</Typography>
                 </CardContent>
