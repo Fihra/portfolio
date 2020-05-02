@@ -21,7 +21,6 @@ class Navigate extends Component {
     }
 
     handleChange = (event, newVal) => {
-        console.log(newVal);
         this.setState({
             selection: newVal
         })

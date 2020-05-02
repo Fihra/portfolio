@@ -10,8 +10,6 @@ const myLinkedIn = "https://www.linkedin.com/in/fabian-fabro";
 const myTwitter = "https://www.twitter.com/firahfabe";
 
 class Header extends Component {
-
-
     render(){
         return(
             <div>
@@ -31,8 +29,7 @@ class Header extends Component {
                     <Link href={myTwitter}>
                     <TwitterIcon ></TwitterIcon>
                     </Link>
-                </IconButton>
-                
+                </IconButton>          
             </div>
         )
     }
