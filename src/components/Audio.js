@@ -5,9 +5,6 @@ import Box from '@material-ui/core/Box';
 import Fade from '@material-ui/core/Fade';
 
 //Project Image Assets
-import MusicInspire from '../assets/MusicInspire.jpg';
-import MusicianDirectory from '../assets/MusicianDirectory.jpg';
-import Instrument_Collection from '../assets/Instrument_Collection.jpg';
 import OshaCoaster from '../assets/OshaCoaster.jpg';
 import fmodAudioDemo from '../assets/FMOD_Audio_Integration_Demo.jpg';
 import DIYorDie from '../assets/DIY_or_Die.jpg';
@@ -18,7 +15,7 @@ import DeathByDebt from '../assets/DeathByDebt.png';
 class Audio extends Component {
     projectData = [
         {
-            title: 'Asteroid Defense',
+            title: 'Asteroid Defense (In-Progress)',
             thumbnail: null,
             info: "A Unity 2D Space-shooter game.",
             role: "Solo Developer",
@@ -33,7 +30,7 @@ class Audio extends Component {
             thumbnail: DIYorDie,
             info: "From Global Game Jam 2020, a 2D Point & Click Game to patch up your destroying car while driving to the next pit stop.",
             role: "Technical Sound Designer",
-            toolsUsed: "FMOD, C#, Unity, Reaper (DAW)",
+            toolsUsed: "FMOD, C#, Unity, Reaper",
             gh: "https://github.com/DIY-or-Die/diy-or-die",
             videoFootage: "https://youtu.be/1_Od8eUzCoU",
             playGame: "https://globalgamejam.org/2020/games/diy-or-die-5",
@@ -66,7 +63,7 @@ class Audio extends Component {
             thumbnail: PathFinder,
             info: "From Lux Game Jam 2020, 2D Top-down Survival Arcade, with a revolver & lights at your disposal, you must fend off enemies that hide in the shadows.",
             role: "Sound Designer & Composer",
-            toolsUsed: "Reaper (DAW), Musescore",
+            toolsUsed: "Reaper, Musescore",
             gh: null,
             videoFootage: null,
             playGame: "https://codetorex.itch.io/pathfinder",
@@ -77,7 +74,7 @@ class Audio extends Component {
             thumbnail: OshaCoaster,
             info: "From Seattle Indies Game Jam, a sandbox game to create your own amusement park inflict as much and suffering to allow you to cash in on that sweet medical bill money.",
             role: "Technical Sound Designer",
-            toolsUsed: "C#, Unity, Reaper (DAW)",
+            toolsUsed: "C#, Unity, Reaper",
             gh: "https://github.com/terrehbyte/oshacoaster",
             videoFootage: null,
             playGame: "https://terrehbyte.itch.io/osha-coaster",
@@ -88,7 +85,7 @@ class Audio extends Component {
             thumbnail: fmodAudioDemo,
             info: "A Unity demo that utilizes FMOD music layering integration and sound effects.",
             role: "Solo Developer",
-            toolsUsed: "FMOD, C#, Unity, Reaper (DAW)",
+            toolsUsed: "FMOD, C#, Unity, Reaper, Musescore",
             gh: "https://github.com/Fihra/FMOD-Audio_Integration_Demo",
             videoFootage: "https://youtu.be/cNpKzpzEpts",
             playGame: null,
@@ -110,7 +107,6 @@ class Audio extends Component {
     render(){
         return(
             <div>
-                
                 <Box display='flex' flexDirection="row" justifyContent="center" flexWrap="wrap" m={1} p={1}>
                     {this.showProjects()}
                 </Box>

@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
 import GitHubIcon from '@material-ui/icons/GitHub';
-import IconButton from '@material-ui/core/IconButton';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import TwitterIcon from '@material-ui/icons/Twitter';
-import Link from '@material-ui/core/Link';
+import { Link, IconButton } from '@material-ui/core';
 
 const myGithub = "https://www.github.com/fihra";
 const myLinkedIn = "https://www.linkedin.com/in/fabian-fabro";

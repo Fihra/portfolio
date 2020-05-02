@@ -1,11 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Switch, Route, Link} from 'react-router-dom';
-import Button from '@material-ui/core/Button';
-
-import Tabs from '@material-ui/core/Tabs';
-import Tab from '@material-ui/core/Tab';
-
-import Fade from '@material-ui/core/Fade';
+import { Tabs, Tab, Fade } from '@material-ui/core';
 
 import About from './About';
 import Audio from './Audio';
@@ -36,7 +30,7 @@ class Navigate extends Component {
                     <Tab value="Contact" label="Contact"/>
                 </Tabs>
                 {this.state.selection === "About" ? <About />: null}
-                {this.state.selection === "Audio" ? <Fade in={true} timeout={{enter: 4000, exit: 4000}}><Audio /></Fade> : null}
+                {this.state.selection === "Audio" ? <Audio /> : null}
                 {this.state.selection === "Web" ? <Fade in={true} timeout={{enter: 4000, exit: 4000}}><Web /></Fade> : null}
                 {this.state.selection === "Contact" ? <Fade in={true} timeout={{enter: 4000, exit: 4000}}><Contact /></Fade> : null}
             </div> 

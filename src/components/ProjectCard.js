@@ -7,42 +7,37 @@ import GamesIcon from '@material-ui/icons/Games';
 import MusicNoteIcon from '@material-ui/icons/MusicNote';
 
 class ProjectCard extends Component {
-   
-    showGithub = (gh) => {
-        return (<Link href={gh}>
-            <IconButton>
-                <GitHubIcon/>
-            </IconButton>
-        </Link>
-        )
-    }
 
-    showVideo = (yt) => {
-        return (<Link href={yt}>
-            <IconButton>
-                <YouTubeIcon/>
-            </IconButton>
-        </Link>
-        )
-    }
-
-    showGame = (game) => {
-        return (<Link href={game}>
-            <IconButton>
-                <GamesIcon/>
-            </IconButton>
-        </Link>
-        )
-    }
-
-    showSoundtrack = (soundtrack) => {
-        
-        return (<Link href={soundtrack}>
-            <IconButton>
-                <MusicNoteIcon/>
-            </IconButton>
-        </Link>
-        )
+    checkLink = (projectLink) => {
+        if(projectLink.includes("github")){
+            return (<Link href={projectLink}>
+                <IconButton>
+                    <GitHubIcon/>
+                </IconButton>
+            </Link>
+            )
+        } else if(projectLink.includes("youtu.be")){
+            return (<Link href={projectLink}>
+                <IconButton>
+                    <YouTubeIcon/>
+                </IconButton>
+            </Link>
+            )
+        } else if(projectLink.includes("itch") || projectLink.includes("global")){
+            return (<Link href={projectLink}>
+                <IconButton>
+                    <GamesIcon/>
+                </IconButton>
+            </Link>
+            )
+        } else if(projectLink.includes("bandcamp")){
+            return (<Link href={projectLink}>
+                <IconButton>
+                    <MusicNoteIcon/>
+                </IconButton>
+            </Link>
+            )
+        }
     }
 
     render(){
@@ -60,10 +55,10 @@ class ProjectCard extends Component {
                     <Typography>Tools used: {toolsUsed}</Typography>
                 </CardContent>
                 <CardActions>
-                    {gh === null ? null : this.showGithub(gh)}
-                    {videoFootage === null ? null : this.showVideo(videoFootage)}
-                    {playGame === null ? null : this.showGame(playGame)}
-                    {soundtrack === null ? null : this.showSoundtrack(soundtrack)}
+                    {gh === null ? null : this.checkLink(gh)}
+                    {videoFootage === null ? null : this.checkLink(videoFootage)}
+                    {playGame === null ? null : this.checkLink(playGame)}
+                    {soundtrack === null ? null : this.checkLink(soundtrack)}
                 </CardActions>
             </Card>
         )
