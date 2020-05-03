@@ -1,10 +1,14 @@
-import React, { Component } from 'react';
+import React from 'react';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import TwitterIcon from '@material-ui/icons/Twitter';
 import EmailIcon from '@material-ui/icons/Email';
 import WebIcon from '@material-ui/icons/Web';
-import { Link, IconButton } from '@material-ui/core';
+import { Link, IconButton, Typography } from '@material-ui/core';
+
+import { createMuiTheme, makeStyles } from '@material-ui/core/styles';
+import { ThemeProvider } from '@material-ui/styles';
+import { green, cyan, grey, blueGrey, brown } from '@material-ui/core/colors';
 
 const myGithub = "https://www.github.com/fihra";
 const myLinkedIn = "https://www.linkedin.com/in/fabian-fabro";
@@ -13,23 +17,25 @@ const myEmail = "mailto:fabrofabian@gmail.com";
 const myBlog = "https://dev.to/fihra";
 
 const Header = (props) => {
-        return(
-            <div>
-                <h1>Fabian Fabro</h1>
-                <h2>Technical Sound Designer | Software Engineer | Composer</h2>
+
+    return(
+        
+        <div>
+                <Typography variant="h2">Fabian Fabro</Typography>
+                <Typography variant="h4">Technical Sound Designer | Software Engineer | Composer</Typography>
                 <IconButton>
                     <Link href={myGithub}>
-                    <GitHubIcon ></GitHubIcon>
+                    <GitHubIcon></GitHubIcon>
                     </Link>
                 </IconButton>
                 <IconButton>
-                 <Link href={myLinkedIn}>
+                    <Link href={myLinkedIn}>
                     <LinkedInIcon></LinkedInIcon>
                     </Link>
                 </IconButton>
                 <IconButton>
                     <Link href={myBlog}>
-                    <WebIcon ></WebIcon>
+                    <WebIcon></WebIcon>
                     </Link>
                 </IconButton>  
                 <IconButton>
@@ -42,8 +48,8 @@ const Header = (props) => {
                     <EmailIcon ></EmailIcon>
                     </Link>
                 </IconButton>   
-            </div>
-        )
-    }
+        </div>
+    )
+}
 
 export default Header;

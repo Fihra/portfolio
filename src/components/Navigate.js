@@ -3,8 +3,17 @@ import { Tabs, Tab, Fade } from '@material-ui/core';
 import About from './About';
 import Audio from './Audio';
 import Web from './Web';
+import { makeStyles } from '@material-ui/styles';
+
+const useStyles = makeStyles(() => ({
+    navBarStyles: {
+        fontSize: 20
+    }
+}))
 
 const Navigate = (props) => {
+    const classes = useStyles();
+
     const [selectionState, setSelectionState] = useState("Audio")
 
     const handleChange = (event, newVal) => {
@@ -14,9 +23,9 @@ const Navigate = (props) => {
     return(
         <div>
             <Tabs value={selectionState} onChange={handleChange} aria-label='wrapped label tabs example' centered>
-                <Tab value="About" label="About" aria-label="About"/>
-                <Tab value="Audio" label="Audio Portfolio" aria-label="Audio Portfolio"/>
-                <Tab value="Web" label="Web Portfolio" aria-label="Web Portfolio"/>
+                <Tab className={classes.navBarStyles} value="About" label="About" aria-label="About"/>
+                <Tab className={classes.navBarStyles} value="Audio" label="Game Audio" aria-label="Game Audio"/>
+                <Tab className={classes.navBarStyles} value="Web" label="Software Apps" aria-label="Software Apps"/>
             </Tabs>
             {selectionState === "About" ? <About />: null}
             {selectionState === "Audio" ? <Audio /> : null}
