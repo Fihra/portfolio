@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Box from '@material-ui/core/Box';
 import Fade from '@material-ui/core/Fade';
 
@@ -8,9 +8,8 @@ import InstrumentCollection from '../assets/Instrument_Collection.jpg';
 
 import WebCard from './WebCard';
 
-class Web extends Component {
-
-    projectData = [
+const Web = (props) => {
+    const projectData = [
         {
             title: 'Hear Me Out (In-Progress)',
             thumbnail: null,
@@ -42,8 +41,8 @@ class Web extends Component {
         },
     ]
 
-    showProjects = () => {
-        return this.projectData.map((project, index) => {
+    const showProjects = () => {
+        return projectData.map((project, index) => {
             return (
                 <Fade in={true} timeout={{ enter: 1000, exit: 1000}} >
                     <Box p={3}><WebCard key={index} project={project}/></Box>
@@ -52,15 +51,13 @@ class Web extends Component {
         })
     }
 
-    render(){
         return(
              <div>
                 <Box display='flex' flexDirection="row" justifyContent="center" flexWrap="wrap" m={1} p={1}>
-                    {this.showProjects()}
+                    {showProjects()}
                 </Box>
             </div>
         )
     }
-}
 
 export default Web;

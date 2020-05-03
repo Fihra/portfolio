@@ -1,14 +1,13 @@
-import React, { Component } from 'react';
-
+import React from 'react';
 import { Card, CardHeader, CardContent, CardMedia, CardActions, IconButton, Typography, Link } from '@material-ui/core';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import YouTubeIcon from '@material-ui/icons/YouTube';
 import GamesIcon from '@material-ui/icons/Games';
 import MusicNoteIcon from '@material-ui/icons/MusicNote';
 
-class ProjectCard extends Component {
+const ProjectCard = (props) => {
 
-    checkLink = (projectLink) => {
+    const checkLink = (projectLink) => {
         if(projectLink.includes("github")){
             return (<Link href={projectLink}>
                 <IconButton>
@@ -40,29 +39,27 @@ class ProjectCard extends Component {
         }
     }
 
-    render(){
-        const { title, thumbnail, info, role, toolsUsed, gh, videoFootage, playGame, soundtrack } = this.props.project;
-      
-        return(
-            <Card className="project-card">
-                <CardHeader title={title}/>
-                <CardMedia className="project-image" image={thumbnail} alt={thumbnail}/>
-                <CardContent>
-                    <Typography>{info}</Typography>
-                </CardContent>
-                {role === null ? null : `Role: ${role}`}
-                <CardContent>
-                    <Typography>Tools used: {toolsUsed}</Typography>
-                </CardContent>
-                <CardActions>
-                    {gh === null ? null : this.checkLink(gh)}
-                    {videoFootage === null ? null : this.checkLink(videoFootage)}
-                    {playGame === null ? null : this.checkLink(playGame)}
-                    {soundtrack === null ? null : this.checkLink(soundtrack)}
-                </CardActions>
-            </Card>
-        )
-    }
+    const { title, thumbnail, info, role, toolsUsed, gh, videoFootage, playGame, soundtrack } = props.project;
+    
+    return(
+        <Card className="project-card">
+            <CardHeader title={title}/>
+            <CardMedia className="project-image" image={thumbnail} alt={thumbnail}/>
+            <CardContent>
+                <Typography>{info}</Typography>
+            </CardContent>
+            {role === null ? null : `Role: ${role}`}
+            <CardContent>
+                <Typography>Tools used: {toolsUsed}</Typography>
+            </CardContent>
+            <CardActions>
+                {gh === null ? null : checkLink(gh)}
+                {videoFootage === null ? null : checkLink(videoFootage)}
+                {playGame === null ? null : checkLink(playGame)}
+                {soundtrack === null ? null : checkLink(soundtrack)}
+            </CardActions>
+        </Card>
+    )
 }
 
 export default ProjectCard;

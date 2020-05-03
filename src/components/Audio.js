@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 import ProjectCard from './ProjectCard';
 import Box from '@material-ui/core/Box';
@@ -12,8 +12,8 @@ import PathFinder from '../assets/pathfinder_laststand.png';
 import SideTracked from '../assets/Sidetracked.jpg';
 import DeathByDebt from '../assets/DeathByDebt.png';
 
-class Audio extends Component {
-    projectData = [
+const Audio = (props) => {
+    const projectData = [
         {
             title: 'Asteroid Defense (In-Progress)',
             thumbnail: null,
@@ -94,8 +94,8 @@ class Audio extends Component {
         
     ]
 
-    showProjects = () => {
-        return this.projectData.map((project, index) => {
+    const showProjects = () => {
+        return projectData.map((project, index) => {
             return (
                 <Fade in={true} timeout={{ enter: 1000, exit: 1000}} >
                     <Box p={3}><ProjectCard key={index} project={project}/></Box>
@@ -104,17 +104,15 @@ class Audio extends Component {
         })
     }
 
-    render(){
         return(
             <div>
                 <Box display='flex' flexDirection="row" justifyContent="center" flexWrap="wrap" m={1} p={1}>
-                    {this.showProjects()}
+                    {showProjects()}
                 </Box>
                 
             </div>
             
         )
     }
-}
 
 export default Audio;
