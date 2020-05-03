@@ -12,8 +12,7 @@ const myTwitter = "https://www.twitter.com/firahfabe";
 const myEmail = "mailto:fabrofabian@gmail.com";
 const myBlog = "https://dev.to/fihra";
 
-class Header extends Component {
-    render(){
+const Header = (props) => {
         return(
             <div>
                 <h1>Fabian Fabro</h1>
@@ -46,6 +45,5 @@ class Header extends Component {
             </div>
         )
     }
-}
 
 export default Header;
