@@ -25,6 +25,7 @@ const SkillsData = (props) => {
     
     return(
         <Grid container justify="center">
+            <Grid item xs={false} />
             <Grid xs={2} item>
                 <List>
                     <Typography className={classes.skillStyles}>Languages</Typography>
@@ -55,6 +56,7 @@ const SkillsData = (props) => {
                     {showItems(methodologies)}
                 </List>
             </Grid>
+            <Grid item xs={false} />
         </Grid>
     )
 }

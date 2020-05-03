@@ -1,8 +1,7 @@
 import React from 'react';
 
 import ProjectCard from './ProjectCard';
-import Box from '@material-ui/core/Box';
-import Fade from '@material-ui/core/Fade';
+import {Fade, Grid} from '@material-ui/core';
 
 //Project Image Assets
 import OshaCoaster from '../assets/OshaCoaster.jpg';
@@ -98,18 +97,21 @@ const Audio = (props) => {
         return projectData.map((project, index) => {
             return (
                 <Fade in={true} timeout={{ enter: 1000, exit: 1000}} >
-                    <Box p={3}><ProjectCard key={index} project={project}/></Box>
+                    <Grid item sm={4}><ProjectCard key={index} project={project} /></Grid>
                 </Fade>
             )
         })
     }
 
         return(
-            <div>
-                <Box display='flex' flexDirection="row" justifyContent="center" flexWrap="wrap" m={1} p={1}>
-                    {showProjects()}
-                </Box>
-                
+            <div style={{ padding: 20}}>
+                {
+                    <Grid container >
+                        {/* <Grid item sm={false}/> */}
+                        {showProjects()}
+                        {/* <Grid item sm={false}/> */}
+                    </Grid>
+                }
             </div>
             
         )

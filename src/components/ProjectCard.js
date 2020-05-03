@@ -5,6 +5,16 @@ import YouTubeIcon from '@material-ui/icons/YouTube';
 import GamesIcon from '@material-ui/icons/Games';
 import MusicNoteIcon from '@material-ui/icons/MusicNote';
 
+import { makeStyles } from '@material-ui/styles';
+
+const useStyles = makeStyles(() => ({
+    cardStyles: {
+        width: 300,
+        height: 500,
+        padding: 50
+    }
+}))
+
 const ProjectCard = (props) => {
 
     const checkLink = (projectLink) => {
@@ -41,8 +51,10 @@ const ProjectCard = (props) => {
 
     const { title, thumbnail, info, role, toolsUsed, gh, videoFootage, playGame, soundtrack } = props.project;
     
+    const classes = useStyles();
+    
     return(
-        <Card className="project-card">
+        <Card className={classes.cardStyles}>
             <CardHeader title={title}/>
             <CardMedia className="project-image" image={thumbnail} alt={thumbnail}/>
             <CardContent>
