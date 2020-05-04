@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/portfolio/build/static/css/main.cceb2f7a.chunk.css",
+    "main.js": "/portfolio/build/static/js/main.a5c02e16.chunk.js",
+    "main.js.map": "/portfolio/build/static/js/main.a5c02e16.chunk.js.map",
+    "runtime-main.js": "/portfolio/build/static/js/runtime-main.ed32477a.js",
+    "runtime-main.js.map": "/portfolio/build/static/js/runtime-main.ed32477a.js.map",
+    "static/js/2.12924617.chunk.js": "/portfolio/build/static/js/2.12924617.chunk.js",
+    "static/js/2.12924617.chunk.js.map": "/portfolio/build/static/js/2.12924617.chunk.js.map",
+    "index.html": "/portfolio/build/index.html",
+    "precache-manifest.5122dd0be2459023e92a926aafeb1fc8.js": "/portfolio/build/precache-manifest.5122dd0be2459023e92a926aafeb1fc8.js",
+    "service-worker.js": "/portfolio/build/service-worker.js",
+    "static/css/main.cceb2f7a.chunk.css.map": "/portfolio/build/static/css/main.cceb2f7a.chunk.css.map",
+    "static/js/2.12924617.chunk.js.LICENSE.txt": "/portfolio/build/static/js/2.12924617.chunk.js.LICENSE.txt",
+    "static/media/DIY_or_Die.jpg": "/portfolio/build/static/media/DIY_or_Die.919db6b0.jpg",
+    "static/media/DeathByDebt.png": "/portfolio/build/static/media/DeathByDebt.e215fb79.png",
+    "static/media/FMOD_Audio_Integration_Demo.jpg": "/portfolio/build/static/media/FMOD_Audio_Integration_Demo.593bc772.jpg",
+    "static/media/Instrument_Collection.jpg": "/portfolio/build/static/media/Instrument_Collection.137fc29f.jpg",
+    "static/media/MusicInspire.jpg": "/portfolio/build/static/media/MusicInspire.0f384bcd.jpg",
+    "static/media/MusicianDirectory.jpg": "/portfolio/build/static/media/MusicianDirectory.597e92b2.jpg",
+    "static/media/OshaCoaster.jpg": "/portfolio/build/static/media/OshaCoaster.02c0ff35.jpg",
+    "static/media/Sidetracked.jpg": "/portfolio/build/static/media/Sidetracked.490bffd7.jpg",
+    "static/media/headshot.jpg": "/portfolio/build/static/media/headshot.bd2803d2.jpg",
+    "static/media/pathfinder_laststand.png": "/portfolio/build/static/media/pathfinder_laststand.bdbf1c29.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ed32477a.js",
+    "static/js/2.12924617.chunk.js",
+    "static/css/main.cceb2f7a.chunk.css",
+    "static/js/main.a5c02e16.chunk.js"
+  ]
+}
