@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, CardHeader, CardContent, CardMedia, CardActions, IconButton, Typography, Link } from '@material-ui/core';
+import { Card, CardHeader, CardContent, CardMedia, CardActions, IconButton, Typography, Link, Grow } from '@material-ui/core';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import YouTubeIcon from '@material-ui/icons/YouTube';
 import GamesIcon from '@material-ui/icons/Games';
@@ -54,23 +54,25 @@ const ProjectCard = (props) => {
     const classes = useStyles();
     
     return(
-        <Card className={classes.cardStyles}>
-            <CardHeader title={title}/>
-            <CardMedia className="project-image" image={thumbnail} alt={thumbnail}/>
-            <CardContent>
-                <Typography>{info}</Typography>
-            </CardContent>
-            {role === null ? null : `Role: ${role}`}
-            <CardContent>
-                <Typography>Tools used: {toolsUsed}</Typography>
-            </CardContent>
-            <CardActions>
-                {gh === null ? null : checkLink(gh)}
-                {videoFootage === null ? null : checkLink(videoFootage)}
-                {playGame === null ? null : checkLink(playGame)}
-                {soundtrack === null ? null : checkLink(soundtrack)}
-            </CardActions>
-        </Card>
+        <Grow in={true} timeout={{enter: 1000}}>
+            <Card className={classes.cardStyles}>
+                <CardHeader title={title}/>
+                <CardMedia className="project-image" image={thumbnail} alt={thumbnail}/>
+                <CardContent>
+                    <Typography>{info}</Typography>
+                </CardContent>
+                {role === null ? null : `Role: ${role}`}
+                <CardContent>
+                    <Typography>Tools used: {toolsUsed}</Typography>
+                </CardContent>
+                <CardActions>
+                    {gh === null ? null : checkLink(gh)}
+                    {videoFootage === null ? null : checkLink(videoFootage)}
+                    {playGame === null ? null : checkLink(playGame)}
+                    {soundtrack === null ? null : checkLink(soundtrack)}
+                </CardActions>
+            </Card>
+        </Grow>
     )
 }
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, CardHeader, CardContent, CardMedia, CardActions, IconButton, Typography, Link } from '@material-ui/core';
+import { Card, CardHeader, CardContent, CardMedia, CardActions, IconButton, Typography, Link, Grow } from '@material-ui/core';
 import GitHubIcon from '@material-ui/icons/GitHub';
 
 import { makeStyles } from '@material-ui/styles';
@@ -18,21 +18,23 @@ const WebCard = (props) => {
     const classes = useStyles();
 
     return(
-        <Card className={classes.cardStyles}>
-            <CardHeader title={title}/>
-            <CardMedia className="project-image" image={thumbnail}/>
-            <CardContent>
-                <Typography>{info}</Typography>
-                <Typography>Tools used: {toolsUsed}</Typography>
-            </CardContent>
-            <CardActions>
-                <Link href={gh}>
-                    <IconButton>
-                        <GitHubIcon/>
-                    </IconButton>
-                </Link>
-            </CardActions>
-        </Card>
+        <Grow in={true} timeout={1000}>
+            <Card className={classes.cardStyles}>
+                <CardHeader title={title}/>
+                <CardMedia className="project-image" image={thumbnail}/>
+                <CardContent>
+                    <Typography>{info}</Typography>
+                    <Typography>Tools used: {toolsUsed}</Typography>
+                </CardContent>
+                <CardActions>
+                    <Link href={gh}>
+                        <IconButton>
+                            <GitHubIcon/>
+                        </IconButton>
+                    </Link>
+                </CardActions>
+            </Card>
+        </Grow>
     )
 }
 

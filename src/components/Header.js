@@ -6,10 +6,6 @@ import EmailIcon from '@material-ui/icons/Email';
 import WebIcon from '@material-ui/icons/Web';
 import { Link, IconButton, Typography } from '@material-ui/core';
 
-import { createMuiTheme, makeStyles } from '@material-ui/core/styles';
-import { ThemeProvider } from '@material-ui/styles';
-import { green, cyan, grey, blueGrey, brown } from '@material-ui/core/colors';
-
 const myGithub = "https://www.github.com/fihra";
 const myLinkedIn = "https://www.linkedin.com/in/fabian-fabro";
 const myTwitter = "https://www.twitter.com/firahfabe";
