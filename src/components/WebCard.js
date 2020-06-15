@@ -1,6 +1,7 @@
 import React from 'react';
 import { Card, CardHeader, CardContent, CardMedia, CardActions, IconButton, Typography, Link, Grow } from '@material-ui/core';
 import GitHubIcon from '@material-ui/icons/GitHub';
+import WebIcon from '@material-ui/icons/Web';
 
 import { makeStyles } from '@material-ui/styles';
 
@@ -8,7 +9,7 @@ const useStyles = makeStyles(() => ({
     cardStyles: {
         width: 300,
         height: 500,
-        padding: 50
+        padding: 30
     }
 }))
 
@@ -16,6 +17,14 @@ const WebCard = (props) => {
     const { title, thumbnail, info, toolsUsed, gh} = props.project;
 
     const classes = useStyles();
+
+    const showDemoLink = () => {
+        return <Link href={props.project.webDemo}>
+            <IconButton>
+                <WebIcon/>
+            </IconButton>
+        </Link>
+    }
 
     return(
         <Grow in={true} timeout={1000}>
@@ -32,6 +41,7 @@ const WebCard = (props) => {
                             <GitHubIcon/>
                         </IconButton>
                     </Link>
+                    {props.project.webDemo ? showDemoLink() : null}
                 </CardActions>
             </Card>
         </Grow>

@@ -4,11 +4,20 @@ import {Fade, Grid} from '@material-ui/core';
 import MusicInspire from '../assets/MusicInspire.jpg';
 import MusicianDirectory from '../assets/MusicianDirectory.jpg';
 import InstrumentCollection from '../assets/Instrument_Collection.jpg';
+import CultureAwareness from '../assets/culture-awareness-101.png';
 
 import WebCard from './WebCard';
 
 const Web = (props) => {
     const projectData = [
+        {
+            title: 'Culture Awareness 101',
+            thumbnail: CultureAwareness,
+            info: "A SPA that gives random facts for certain mediums to feature creators of the African-American demographic.",
+            toolsUsed: "React Hooks, Cheerio, Request, Material UI",
+            gh: "https://github.com/Fihra/culture-awareness-101",
+            webDemo: "https://culture-awareness-101.herokuapp.com"
+        },
         {
             title: 'Hear Me Out (In-Progress)',
             thumbnail: null,
