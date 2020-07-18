@@ -4,6 +4,7 @@ import ProjectCard from './ProjectCard';
 import {Grid} from '@material-ui/core';
 
 //Project Image Assets
+import AsteroidDefense from '../assets/Asteroid_Defense.png';
 import OshaCoaster from '../assets/OshaCoaster.jpg';
 import fmodAudioDemo from '../assets/FMOD_Audio_Integration_Demo.jpg';
 import DIYorDie from '../assets/DIY_or_Die.jpg';
@@ -14,9 +15,9 @@ import DeathByDebt from '../assets/DeathByDebt.png';
 const Audio = (props) => {
     const projectData = [
         {
-            title: 'Asteroid Defense (In-Progress)',
-            thumbnail: null,
-            info: "A Unity 2D Space-shooter game.",
+            title: 'Asteroid Defense',
+            thumbnail: AsteroidDefense,
+            info: "A Unity 2D Space-shooter game where you shoot down falling asteroids hurling towards Earth.",
             role: "Solo Developer",
             toolsUsed: "Unity, C#, Wwise, Reaper, Musescore",
             gh: "https://github.com/Fihra/Asteroid-Defense",
