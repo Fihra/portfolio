@@ -21,7 +21,7 @@ const Audio = (props) => {
             role: "Solo Developer",
             toolsUsed: "Unity, C#, Wwise, Reaper, Musescore",
             gh: "https://github.com/Fihra/Asteroid-Defense",
-            videoFootage: null,
+            videoFootage: "https://youtu.be/rDpsfB2TOX0",
             playGame: null,
             soundtrack: null
         },

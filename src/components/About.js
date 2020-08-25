@@ -12,7 +12,7 @@ const About = (props) =>  {
                 <Paper elevation={0}>
                 <Container maxWidth="sm">
                     <Avatar alt="Fabian Headshot" src={myImg} style={{height: 150, width: 150, float: 'left', padding: 'auto'}}/>
-                        <Typography variant="body1">Fabian Fabro is a technical sound designer, software engineer, and composer.  He is a graduate from Flatiron School Seattle in the software engineering program. He is also a graduate from University of Hawai&#699;i at M&#257;noa with a B.A. in music and anthropology.</Typography>
+                        <Typography variant="body1">Fabian Fabro is a technical sound designer, software engineer, and composer.  He is a graduate from Flatiron School Seattle in the software engineering program. He is also a graduate from University of Hawai&#699;i at M&#257;noa with a B.A. in music and anthropology. Fabian is passionate with finding the intersection of audio and technology</Typography>
                     </Container>
                 <SkillsData/>
                 </Paper>
