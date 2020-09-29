@@ -2,8 +2,8 @@ import React from 'react';
 import { List, ListItem, Typography, Grid } from '@material-ui/core';
 import { makeStyles } from '@material-ui/styles';
 
-const languages = ["Javascript", "C#", "Ruby", "HTML", "CSS", "SQL"];
-const frameworks = ["React/React Hooks", "Redux", "Unity", "Unreal Engine", "ASP.NET", "Ruby on Rails"];
+const languages = ["Javascript", "C#", "Python", "C++", "Ruby", "HTML", "CSS", "SQL"];
+const frameworks = ["React/React Hooks", "Redux", "Unity", "Unreal Engine", "Django", "ASP.NET", "Ruby on Rails"];
 const audioTools = ["Wwise", "FMOD", "Reaper", "Musescore"];
 const otherTools = ["MongoDB", "Node.js", "Express", "SQLite3", "PostgreSQL", "Material UI", "Git & Github", "Postman"];
 const methodologies = ["MVC (Model-View-Controller)", "OOP (Object-Oriented Programming)", "Functional Programming", "Restful Routes API"];

@@ -5,11 +5,19 @@ import MusicInspire from '../assets/MusicInspire.jpg';
 import MusicianDirectory from '../assets/MusicianDirectory.jpg';
 import InstrumentCollection from '../assets/Instrument_Collection.jpg';
 import CultureAwareness from '../assets/culture-awareness-101.png';
+import JamOut from '../assets/Jam-Out.png';
 
 import WebCard from './WebCard';
 
 const Web = (props) => {
     const projectData = [
+        {
+            title: 'Jam Out (WIP)',
+            thumbnail: JamOut,
+            info: "An SPA of a Music Loop Sequence that you can play to with the browser piano keyboard. Sounds built uses Tone.js. ",
+            toolsUsed: "React Hooks, Django, Tone.js, Blueprint.js, Kiwi Orbits, React-Piano",
+            gh: "https://github.com/Fihra/Jam-Out",
+        },
         {
             title: 'Culture Awareness 101',
             thumbnail: CultureAwareness,

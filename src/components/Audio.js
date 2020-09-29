@@ -5,6 +5,7 @@ import {Grid} from '@material-ui/core';
 
 //Project Image Assets
 import AsteroidDefense from '../assets/Asteroid_Defense.png';
+import NLV from '../assets/NLV.png';
 import OshaCoaster from '../assets/OshaCoaster.jpg';
 import fmodAudioDemo from '../assets/FMOD_Audio_Integration_Demo.jpg';
 import DIYorDie from '../assets/DIY_or_Die.jpg';
@@ -15,7 +16,7 @@ import DeathByDebt from '../assets/DeathByDebt.png';
 const Audio = (props) => {
     const projectData = [
         {
-            title: 'Asteroid Defense',
+            title: 'Asteroid Defense (WIP)',
             thumbnail: AsteroidDefense,
             info: "A Unity 2D Space-shooter game where you shoot down falling asteroids hurling towards Earth.",
             role: "Solo Developer",
@@ -23,6 +24,17 @@ const Audio = (props) => {
             gh: "https://github.com/Fihra/Asteroid-Defense",
             videoFootage: "https://youtu.be/rDpsfB2TOX0",
             playGame: null,
+            soundtrack: null
+        },
+        {
+            title: 'Night of the Lesbian Vampires',
+            thumbnail: NLV,
+            info: "From Spooktober Game Jam 2020, a Ren'py dating visual novel game about vampire lesbians.",
+            role: "Composer, Sound Designer, & Dialogue Audio Editor",
+            toolsUsed: "Reaper, Musescore",
+            gh: null,
+            videoFootage: "https://youtu.be/GqrOw6bhDKk",
+            playGame: "https://scribbles.itch.io/night-of-the-lesbian-vampires",
             soundtrack: null
         },
         {

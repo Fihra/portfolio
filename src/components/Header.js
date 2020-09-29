@@ -4,7 +4,11 @@ import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import TwitterIcon from '@material-ui/icons/Twitter';
 import EmailIcon from '@material-ui/icons/Email';
 import WebIcon from '@material-ui/icons/Web';
+import DescriptionIcon from '@material-ui/icons/Description';
 import { Link, IconButton, Typography } from '@material-ui/core';
+
+import AudioTechResume from '../assets/Fabian-Fabro-Tech-Audio-Resume.pdf';
+import SoftwareResume from '../assets/Fabian-Fabro-Resume.pdf';
 
 const myGithub = "https://www.github.com/fihra";
 const myLinkedIn = "https://www.linkedin.com/in/fabian-fabro";
@@ -36,14 +40,24 @@ const Header = (props) => {
                 </IconButton>  
                 <IconButton>
                     <Link href={myTwitter}>
-                    <TwitterIcon ></TwitterIcon>
+                    <TwitterIcon></TwitterIcon>
                     </Link>
                 </IconButton>         
                 <IconButton>
                     <Link href={myEmail}>
-                    <EmailIcon ></EmailIcon>
+                    <EmailIcon></EmailIcon>
                     </Link>
                 </IconButton>   
+                <IconButton>
+                    <Link href={AudioTechResume} target="_blank">
+                    <DescriptionIcon></DescriptionIcon>
+                    </Link>
+                </IconButton> 
+                <IconButton>
+                    <Link href={SoftwareResume} target="_blank">
+                    <DescriptionIcon></DescriptionIcon>
+                    </Link>
+                </IconButton> 
         </div>
     )
 }
