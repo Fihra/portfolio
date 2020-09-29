@@ -1,24 +1,28 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.cceb2f7a.chunk.css",
-    "main.js": "/portfolio/static/js/main.c3f9de1e.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.c3f9de1e.chunk.js.map",
+    "main.js": "/portfolio/static/js/main.206f8dac.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.206f8dac.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.f4f2abbf.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.f4f2abbf.js.map",
-    "static/js/2.adcfa766.chunk.js": "/portfolio/static/js/2.adcfa766.chunk.js",
-    "static/js/2.adcfa766.chunk.js.map": "/portfolio/static/js/2.adcfa766.chunk.js.map",
+    "static/js/2.5310029c.chunk.js": "/portfolio/static/js/2.5310029c.chunk.js",
+    "static/js/2.5310029c.chunk.js.map": "/portfolio/static/js/2.5310029c.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "precache-manifest.7da39c805982fb061e50a9b08fe2770f.js": "/portfolio/precache-manifest.7da39c805982fb061e50a9b08fe2770f.js",
+    "precache-manifest.0bf063411c33f2f21823a6ef8a918152.js": "/portfolio/precache-manifest.0bf063411c33f2f21823a6ef8a918152.js",
     "service-worker.js": "/portfolio/service-worker.js",
     "static/css/main.cceb2f7a.chunk.css.map": "/portfolio/static/css/main.cceb2f7a.chunk.css.map",
-    "static/js/2.adcfa766.chunk.js.LICENSE.txt": "/portfolio/static/js/2.adcfa766.chunk.js.LICENSE.txt",
+    "static/js/2.5310029c.chunk.js.LICENSE.txt": "/portfolio/static/js/2.5310029c.chunk.js.LICENSE.txt",
     "static/media/Asteroid_Defense.png": "/portfolio/static/media/Asteroid_Defense.a8f3f243.png",
     "static/media/DIY_or_Die.jpg": "/portfolio/static/media/DIY_or_Die.919db6b0.jpg",
     "static/media/DeathByDebt.png": "/portfolio/static/media/DeathByDebt.e215fb79.png",
     "static/media/FMOD_Audio_Integration_Demo.jpg": "/portfolio/static/media/FMOD_Audio_Integration_Demo.593bc772.jpg",
+    "static/media/Fabian-Fabro-Resume.pdf": "/portfolio/static/media/Fabian-Fabro-Resume.c08e94c4.pdf",
+    "static/media/Fabian-Fabro-Tech-Audio-Resume.pdf": "/portfolio/static/media/Fabian-Fabro-Tech-Audio-Resume.c2fc54a7.pdf",
     "static/media/Instrument_Collection.jpg": "/portfolio/static/media/Instrument_Collection.137fc29f.jpg",
+    "static/media/Jam-Out.png": "/portfolio/static/media/Jam-Out.ce1c6862.png",
     "static/media/MusicInspire.jpg": "/portfolio/static/media/MusicInspire.0f384bcd.jpg",
     "static/media/MusicianDirectory.jpg": "/portfolio/static/media/MusicianDirectory.597e92b2.jpg",
+    "static/media/NLV.png": "/portfolio/static/media/NLV.3171da19.png",
     "static/media/OshaCoaster.jpg": "/portfolio/static/media/OshaCoaster.02c0ff35.jpg",
     "static/media/Sidetracked.jpg": "/portfolio/static/media/Sidetracked.490bffd7.jpg",
     "static/media/culture-awareness-101.png": "/portfolio/static/media/culture-awareness-101.30cf03e6.png",
@@ -27,8 +31,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.f4f2abbf.js",
-    "static/js/2.adcfa766.chunk.js",
+    "static/js/2.5310029c.chunk.js",
     "static/css/main.cceb2f7a.chunk.css",
-    "static/js/main.c3f9de1e.chunk.js"
+    "static/js/main.206f8dac.chunk.js"
   ]
 }

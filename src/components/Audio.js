@@ -110,7 +110,7 @@ const Audio = (props) => {
         return projectData.map((project, index) => {
             return (
                 // <Fade in={true} timeout={{ enter: 1000, exit: 1000}} >
-                    <Grid item sm={4}><ProjectCard key={index} project={project} /></Grid>
+                    <Grid key={index} item sm={4}><ProjectCard key={index} project={project} /></Grid>
                 // </Fade>
             )
         })

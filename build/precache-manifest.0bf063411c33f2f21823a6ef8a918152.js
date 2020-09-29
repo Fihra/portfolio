@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "a0632e00bd58a9963676f5e651e53820",
+    "revision": "21bf8801af2f4fc313bde029ca189867",
     "url": "/portfolio/index.html"
   },
   {
-    "revision": "5746ff624187cf3ca996",
+    "revision": "9a47c3a31ee79a0460e4",
     "url": "/portfolio/static/css/main.cceb2f7a.chunk.css"
   },
   {
-    "revision": "611d5028ce1d8a17b7e8",
-    "url": "/portfolio/static/js/2.adcfa766.chunk.js"
+    "revision": "73938bf36a623046fcb9",
+    "url": "/portfolio/static/js/2.5310029c.chunk.js"
   },
   {
     "revision": "0749163b59fbee32225059cb60c18af6",
-    "url": "/portfolio/static/js/2.adcfa766.chunk.js.LICENSE.txt"
+    "url": "/portfolio/static/js/2.5310029c.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "5746ff624187cf3ca996",
-    "url": "/portfolio/static/js/main.c3f9de1e.chunk.js"
+    "revision": "9a47c3a31ee79a0460e4",
+    "url": "/portfolio/static/js/main.206f8dac.chunk.js"
   },
   {
     "revision": "e5284505c87d0b24b753",
@@ -40,8 +40,20 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portfolio/static/media/FMOD_Audio_Integration_Demo.593bc772.jpg"
   },
   {
+    "revision": "c08e94c443851a646a9ee0105183c219",
+    "url": "/portfolio/static/media/Fabian-Fabro-Resume.c08e94c4.pdf"
+  },
+  {
+    "revision": "c2fc54a745b5fed3ba3e223a435bc996",
+    "url": "/portfolio/static/media/Fabian-Fabro-Tech-Audio-Resume.c2fc54a7.pdf"
+  },
+  {
     "revision": "137fc29f227211dfd8674daa40e21eac",
     "url": "/portfolio/static/media/Instrument_Collection.137fc29f.jpg"
+  },
+  {
+    "revision": "ce1c6862c7751ea45e8cd37c6df72069",
+    "url": "/portfolio/static/media/Jam-Out.ce1c6862.png"
   },
   {
     "revision": "0f384bcdeec1895492e1ac57eed07f86",
@@ -50,6 +62,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "597e92b2e1898fb5da9cb71689c781be",
     "url": "/portfolio/static/media/MusicianDirectory.597e92b2.jpg"
+  },
+  {
+    "revision": "3171da19e7dc208a3c7a961d3fdea0ef",
+    "url": "/portfolio/static/media/NLV.3171da19.png"
   },
   {
     "revision": "02c0ff3590f098a5383d180f84ce3644",
